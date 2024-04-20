@@ -4,142 +4,195 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title class="font-keren">My Portofolio</title>
+    <title>SuruhKoding</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 <body>
-
-    <div class="container">
-        <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand font-3 font-keren bb-1 bt" href="#">My Portofolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+    <nav class="navbar position-sticky navbar-expand-lg p-4">
+        <div class="container-fluid">
+            <img src="image/code.png" style="max-width: 60px; max-height: 60px;" class="rounded-circle" alt="">
+            <a class="navbar-brand font-3 font-keren ms-2 text-white" href="#">SuruhKoding</a>
+            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link" aria-current="page" href="#home">Home</a>
-                    <a class="nav-link" href="#skill">Skill</a>
-                    <a class="nav-link" href="#experience">Experience</a>
+                    <a class="nav-link" href="#beranda">Beranda</a>
+                    <a class="nav-link" href="#layanan">Layanan</a>
                     <a class="nav-link" href="#portofolio">Portofolio</a>
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link" href="#sertifikat">Sertifikat</a>
                 </div>
             </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
     <div class="jumbotron" id="home">
-        <div class="container" data-aos="fade-up">
+        <div class="container" data-aos="fade-down">
             <div class="row justify-content-center">
                 <div class="col-md-6 mt-4">
-                    <img src="" style="width: 5cm; height: 5cm;"
+                    <img src="image/WhatsApp Image 2024-03-24 at 16.37.17.jpeg" style="width: 5cm; height: 5cm;"
                         class="rounded-circle img-thumbnail mt-6" alt="">
-                    <h1 class="mt-3 font-keren">ARMAN UMAR</h1>
-
+                    <h1 class="mt-3">ARMAN UMAR</h1>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container mb-5">
+    <div class="container mb-5" id="card">
         <div class="row justify-content-center">
             <div class="col-md-4">
-                <div class="card backend p-3 shadow-lg bg-light" data-aos="fade-right">
-                    <p class="text-center"><span><i class="bi bi-github"></i></span><span class="ms-3"><i
-                                class="bi bi-linkedin"></i></span>
+                <div class="card backend p-3 shadow bg-light" data-aos="fade-up">
+                    <p class="text-center" style="color: #38527E;"><span><i class="bi bi-github"></i></span><span
+                            class="ms-3"><i class="bi bi-linkedin"></i></span>
                         <span class="ms-3"><i class="bi bi-instagram"></i></span><span class="ms-3"><i
                                 class="bi bi-facebook"></i></span>
                         <span class="ms-3"><i class="bi bi-whatsapp"></i></span>
                     </p>
-                    <h3 class="text-center font-keren">Mahasiswa</h3>
+                    <h3 class="text-center" style="color: #38527E;">Web Developer</h3>
                 </div>
                 <div id="skill"></div>
             </div>
         </div>
     </div>
-    <div class="container mb-4">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="card shadow-lg skill p-4" data-aos="fade-left">
-                    <h3 class="font-keren text-center bb mx-auto">Skill</h3>
-                    <p><i class="bi bi-check2-circle"></i> PHP</p>
-                    <p><i class="bi bi-check2-circle"></i> Laravel</p>
-                    <p><i class="bi bi-check2-circle"></i> JQuery Ajax</p>
-                    <p><i class="bi bi-check2-circle"></i> Mysql</p>
-                    <p><i class="bi bi-check2-circle"></i> Git</p>
-                    <p><i class="bi bi-check2-circle"></i> Bootstrap</p>
-                </div>
-            </div>
-            <div id="experience"></div>
-        </div>
-    </div>
-    <div class="container mb-4">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card p-4 shadow-lg" data-aos="fade-up">
-                    <h3 class="font-keren text-center mb-4 bb mx-auto">Exprerience</h3>
-                    <p class=""><i class="bi bi-check2-circle text-success"></i> Anggota, Organisasi Rekayasa
-                        Perangkat Lunak UNIVERSITAS SULAWESI BARAT</p>
-                    <p class=""><i class="bi bi-check2-circle text-success"></i> Asisten dosen Dasar-Dasar
-                        Pemrogramaan</p>
-                    <p class=""><i class="bi bi-check2-circle text-success"></i> Asisten dosen Structure data Dan
-                        Algoritma</p>
-                </div>
-            </div>
-            <div id="portofolio"></div>
-        </div>
-    </div>
 
-    <div class="container mb-4">
-        <div class="row justify-content-center">
-            <div class="col-md-10">
-                <div class="card shadow-lg p-4" data-aos="fade-right">
-                    <h3 class="text-center mb-4 font-keren bb mx-auto">Portofolio</h3>
-                    <div class="row justify-content-center">
-                        <div class="col-md-3 mb-2">
-                            <div class="jumbotron-1">
-                                <p>Blog Artikel Sederhana Dengan Laravel</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-2">
-                            <div class="jumbotron-1">
-                                <p>Sistem Pemesanan Lapangan Futsal Dengan Laravel</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-2">
-                            <div class="jumbotron-1">
-                                <p>Sistem Absensi Berbasis QRCode Dengan Laravel</p>
-                            </div>
-                        </div>
+    <div class="container mb-3">
+        <div class="row">
+            <h3 class="mb-3 text-center" id="layanan">Siap Melayani</h3>
+            <hr>
+            <div class="col-md-4 mb-3" id="portofolio">
+                <div class="card p-3">
+                    <div class="card-title text-center">
+                        <h5>Pembuatan Website</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>Kami menyediakan layanan pembuatan website untuk bisnis dan kebutuhan pribadi Anda.</p>
                     </div>
                 </div>
             </div>
-            <div id="contact"></div>
+            <div class="col-md-4 mb-3">
+                <div class="card p-3">
+                    <div class="card-title text-center">
+                        <h5>Perakitan Mikrokontroler/IOT</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>Kami merakit sistem mikrokontroler dan Internet of Things (IoT) untuk berbagai aplikasi.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card p-3">
+                    <div class="card-title text-center">
+                        <h5>Kursus Pemrograman</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>Pelajari dasar-dasar pemrograman dengan mudah melalui kursus kami.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="container mb-5">
-        <div class="row justify-content-center">
-            <div class="col-md-12">
-                <div class="card shadow-lg p-4" data-aos="fade-left">
-                    <h3 class="font-keren bb mx-auto mb-4">Contact</h3>
-                    <form action="">
-                        <label for="" class="mb-2">Name</label>
-                        <input type="text" class="form-control mb-3" placeholder="Enter your name"
-                            name="" id="">
-                        <label for="" class="mb-2">Email</label>
-                        <input type="text" class="form-control mb-3" placeholder="Enter your email"
-                            name="" id="">
-                        <label for="" class="mb-2">Message</label>
-                        <textarea name="" id="" cols="30" rows="5" placeholder="Enter your message"
-                            class="form-control"></textarea>
-                        <button class="btn btn-primary mt-4"><i class="bi bi-send"></i> Send</button>
-                    </form>
+    <div class="container mb-3">
+        <div class="row">
+            <h3 class="text-center mb-3">Portofolio</h3>
+            <hr>
+            <!-- <div class="overflow-x-auto"> -->
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="image/IMG20230624123310.jpg" class="img-cover" alt="">
+                    </div>
                 </div>
-            </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="image/WhatsApp Image 2023-04-30 at 16.53.53.jpeg" class="img-cover" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="image/WhatsApp Image 2024-03-24 at 16.37.17.jpeg" class="img-cover" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="image/code.png" class="img-cover" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="image/WhatsApp Image 2023-04-30 at 16.53.53.jpeg" class="img-cover" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="image/Universitas_Sulawesi_Barat.jpg" class="img-cover" alt="">
+                    </div>
+                </div>
+            <!-- </div> -->
+        </div>
+    </div>
+    <div class="container mb-1">
+        <div class="row justify-content-center">
+            <h3 class="text-center mb-3">Sertifikat</h3>
+            <hr>
+            <!-- <div class="overflow-x-auto"> -->
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="image/Lomba Pembuatan Website.jpg" class="img-cover" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="image/Agile.png" class="img-cover" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="image/100daysofcoding.jpg" class="img-cover" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="image/Peserta microcontroller.jpg" class="img-cover" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="image/Sertifikat inovasi teknologi balitbangda_page-0001.jpg" class="img-cover" alt="">
+                    </div>
+                </div>
+            <!-- </div> -->
+        </div>
+    </div>
+
+    <div class="container-fluid mt-5" style="background-color: #38527E; margin-bottom: -60px;">
+        <div class="container p-4">
+            <h3 class="text-white mb-3 mt-3">Kontak</h3>
+            <hr class="text-white">
+            <p class="text-white">Email. ammangdeveloper@gmail.com</p>
+            <p class="text-white">Telp. 082280762799</p>
+            <p class="text-white">Instagram. amm4ng</p>
+        </div>
+    </div>
+    <h3 id="hubungi"><img src="image/pngtree-whatsapp-icon-png-image_6315990.png" style="max-width: 50px; max-height: 50px;"
+            alt=""></h3>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Try scrolling the rest of the page to see this option in action.</p>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
@@ -149,6 +202,7 @@
     <script>
         AOS.init();
     </script>
+    <script src="main.js"></script>
 </body>
 
 </html>

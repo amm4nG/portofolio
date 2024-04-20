@@ -1,5 +1,15 @@
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+body::-webkit-scrollbar{
+    width: 0;
+}
+
 .jumbotron {
-  background-color: #6f42c1; 
+  background-color: #38527E; 
   height: 335px;
   text-align: center;
   margin-bottom: 24px; 
@@ -7,13 +17,6 @@
   color: white;   
   align-items: center;
 } 
-
-.jumbotron-1 {
-  background-color: #e9ecef;
-  padding: 2rem 1rem;
-  margin-bottom: 2rem;
-  border-radius: 0.3rem;
-}
 
 .jumbotron-1 h1 {
   font-size: 2.5rem;
@@ -38,58 +41,68 @@
 } 
 
 .navbar {
-    background-color: white;
+    background-color: #38527E;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .backend {
     margin-top: -80px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}  
+
+#card{
+    z-index: 0;
 }
 
-.skill {
-    margin-top: -30px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+.overflow-x-auto{
+   display: flex;
+   gap: 5px;
+ }
+
+.overflow-x-auto::-webkit-scrollbar{
+  width: 0;
 }
 
-.font-keren {
-    font-family: Trebuchet;
+.img-cover {
+  transition: transform 0.3s ease;
+  height: 250px;
+  object-fit: cover;
 }
 
-.bb { 
-    border-bottom: 1px solid black; 
-    width: max-content;
+.img-cover:hover {
+    transform: scale(0.8); /* Atur faktor skala sesuai kebutuhan */
+    object-fit: contain;
 }
 
-.bb-1 {
-    border-bottom: 1px solid black;
-    width: max-content;
+#hubungi{
+  position: sticky;
+  bottom: 30px;
+  text-align: end;
+  margin-right: 30px;
 }
-.bt {
-    border-top: 1px solid black;
-    width: max-content;
-} 
+    
 
 @media (min-width: 992px) {
+
+
     .navbar {
-        background-color: #6f42c1;
+        background-color: #38527E;
+        position: sticky;
+        top: 0;
+    }  
+
+    .nav-link{
+      color: white;
     }
 
-    .bb-1 {
-        border-bottom: 1px solid white;
-        width: max-content;
-    }
-
-    .bt {
-        border-top: 1px solid white;
-        width: max-content;
+    .nav-link:hover {
+      color: rgb(179, 179, 179);
     }
     
-    .nav-link {
-        color: white;
-    }
-
-    .nav-link:hofer {
-        border-bottom: 3px solid white;
+    .nav-link:active{
+      color: rgb(179, 179, 179);
     }
  
     .navbar-brand {
